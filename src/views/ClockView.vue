@@ -5,14 +5,11 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Clock from '@/components/Clock.vue';
 
 export default {
   name: 'ClockView',
-  components: {
-    Clock,
-  },
+  components: { Clock },
 };
 </script>
 

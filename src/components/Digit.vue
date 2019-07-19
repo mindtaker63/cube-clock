@@ -16,11 +16,6 @@
 import BaseCube from './BaseCube.vue';
 
 // grid is 6 cubes across 4 cubes wide
-// const GRID_WIDTH = 4;
-// const GRID_HEIGHT = 6;
-
-// const FULL_GRID = new Array(GRID_HEIGHT).fill(new Array(GRID_WIDTH).fill(1));
-
 const ZERO = [
   [1, 1, 1, 1],
   [1, 0, 0, 1],
