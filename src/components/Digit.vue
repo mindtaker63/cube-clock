@@ -143,7 +143,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  $digit-margin: 4px
+  $digit-margin: 8px
   .digit
     display: flex
     flex-direction: column

@@ -90,7 +90,7 @@ export default {
 
 <style lang="sass" scoped>
   $separator-color: #fff
-  $separator-size: 9em
+  $separator-size: 11em
   .clock
     display: flex
     &__digit
