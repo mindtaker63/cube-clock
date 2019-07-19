@@ -64,7 +64,9 @@ export default {
     },
   },
   mounted() {
-    setInterval(() => this.cachedDate = new Date(), 500);
+    setInterval(() => {
+      this.cachedDate = new Date();
+    }, 500);
   },
 };
 </script>
