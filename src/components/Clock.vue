@@ -31,9 +31,23 @@ export default {
   components: { Digit },
   computed: {
     getHourFirstDigit() {
+      const hour = this.cachedDate.getHours();
+      if (hour === 0) {
+        return this.digitAtPlace('00', 1);
+      }
+      if (hour > 12) {
+        return this.digitAtPlace(hour - 12, 1);
+      }
       return this.digitAtPlace(this.cachedDate.getHours(), 1);
     },
     getHourSecondDigit() {
+      const hour = this.cachedDate.getHours();
+      if (hour === 0) {
+        return this.digitAtPlace('00', 2);
+      }
+      if (hour > 12) {
+        return this.digitAtPlace(hour - 12, 2);
+      }
       return this.digitAtPlace(this.cachedDate.getHours(), 2);
     },
     getMinuteFirstDigit() {
@@ -59,6 +73,9 @@ export default {
       const strNumber = number.toString();
       if (strNumber.length > 1) {
         return Number.parseInt(strNumber[place - 1], 0);
+      }
+      if (strNumber.length === 1 && place > 1) {
+        return number;
       }
       return 0;
     },

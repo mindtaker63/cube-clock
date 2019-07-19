@@ -79,7 +79,7 @@ const SIX = [
   [1, 0, 0, 0],
   [1, 0, 0, 0],
   [1, 1, 1, 1],
-  [1, 0, 0, 0],
+  [1, 0, 0, 1],
   [1, 0, 0, 1],
   [1, 1, 1, 1],
 ];
@@ -143,6 +143,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  $digit-margin: 4px
   .digit
     display: flex
     flex-direction: column
@@ -151,7 +152,7 @@ export default {
       flex-direction: row
       max-width: content
     &__cube
-      margin: 8px
+      margin: $digit-margin
       visibility: hidden
       &--active
         visibility: visible
