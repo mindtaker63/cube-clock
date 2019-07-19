@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Clock from './views/Clock.vue';
+import ClockView from './views/ClockView.vue';
 
 Vue.use(Router);
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'clock',
-      component: Clock,
+      name: 'clock-view',
+      component: ClockView,
     },
   ],
 });

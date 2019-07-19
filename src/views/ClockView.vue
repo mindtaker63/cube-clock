@@ -1,17 +1,17 @@
 <template>
-  <div class="clock">
-    <digit />
+  <div class="clock-view">
+    <clock />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Digit from '@/components/Digit.vue';
+import Clock from '@/components/Clock.vue';
 
 export default {
-  name: 'Clock',
+  name: 'ClockView',
   components: {
-    Digit,
+    Clock,
   },
 };
 </script>

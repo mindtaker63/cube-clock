@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-$cube-size: 50px
+$cube-size: 25px
 $perspective: $cube-size * 3
 $face-opacity: .3
 $face-border: 2px solid #000

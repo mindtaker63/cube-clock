@@ -149,6 +149,7 @@ export default {
     &__row
       display: flex
       flex-direction: row
+      max-width: content
     &__cube
       margin: 8px
       visibility: hidden
